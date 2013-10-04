@@ -3,30 +3,30 @@ dotvim
 
 ```bash
 
-levi@tums:~
+pzula:~
 $ rm .vimrc
 
-levi@tums:~
+pzula:~
 $ rm -r .vim
 
-levi@tums:~
-$ git clone git@github.com:levicook/dotvim.git
+pzula:~
+$ git clone git@github.com:pzula/dotvim.git
 Cloning into 'dotvim'...
 remote: Counting objects: 8, done.
 remote: Compressing objects: 100% (6/6), done.
 remote: Total 8 (delta 0), reused 8 (delta 0)
 Receiving objects: 100% (8/8), 5.11 KiB, done.
 
-levi@tums:~
+pzula:~
 $ ln -s dotvim .vim
 
-levi@tums:~
+pzula:~
 $ ln -s dotvim/vimrc .vimrc
 
-levi@tums:~
+pzula:~
 $ cd dotvim/
 
-levi@tums:~/dotvim (master)
+pzula:~/dotvim (master)
 $ git submodule init
 Submodule 'bundle/Command-T' (git://github.com/wincent/Command-T.git) registered for path 'bundle/Command-T'
 Submodule 'bundle/ack.vim' (git://github.com/mileszs/ack.vim.git) registered for path 'bundle/ack.vim'
@@ -45,7 +45,7 @@ Submodule 'bundle/vim-sensible' (git://github.com/tpope/vim-sensible.git) regist
 Submodule 'bundle/vim-surround' (git://github.com/tpope/vim-surround.git) registered for path 'bundle/vim-surround'
 Submodule 'bundle/vim-toml' (git://github.com/cespare/vim-toml.git) registered for path 'bundle/vim-toml'
 
-levi@tums:~/dotvim (master)
+pzula:~/dotvim (master)
 $ git submodule update
 Cloning into 'bundle/Command-T'...
 remote: Counting objects: 2682, done.
@@ -158,25 +158,6 @@ remote: Total 18 (delta 4), reused 17 (delta 3)
 Receiving objects: 100% (18/18), done.
 Resolving deltas: 100% (4/4), done.
 Submodule path 'bundle/vim-toml': checked out '7a9227b02088a272d7e28134d8a7d103e58ebf24'
-
-levi@tums:~/dotvim (master)
-$ cd bundle/Command-T/ruby/command-t/
-
-levi@tums:~/dotvim/bundle/Command-T/ruby/command-t ((8866bbc...))
-$ rvm use system
-Now using system ruby.
-
-levi@tums:~/dotvim/bundle/Command-T/ruby/command-t ((8866bbc...))
-$ ruby extconf.rb
-checking for ruby.h... yes
-creating Makefile
-
-levi@tums:~/dotvim/bundle/Command-T/ruby/command-t ((8866bbc...))
-$ make
-xcrun cc -I. -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin12.0 -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin12.0 -I. -DHAVE_RUBY_H  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -fno-common -arch i386 -arch x86_64 -g -Os -pipe -fno-common -DENABLE_DTRACE  -fno-common  -pipe -fno-common   -std=c99 -Wall -Wextra -Wno-unused-parameter -c ext.c
-xcrun cc -I. -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin12.0 -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin12.0 -I. -DHAVE_RUBY_H  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -fno-common -arch i386 -arch x86_64 -g -Os -pipe -fno-common -DENABLE_DTRACE  -fno-common  -pipe -fno-common   -std=c99 -Wall -Wextra -Wno-unused-parameter -c match.c
-xcrun cc -I. -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin12.0 -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin12.0 -I. -DHAVE_RUBY_H  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -fno-common -arch i386 -arch x86_64 -g -Os -pipe -fno-common -DENABLE_DTRACE  -fno-common  -pipe -fno-common   -std=c99 -Wall -Wextra -Wno-unused-parameter -c matcher.c
-cc -arch i386 -arch x86_64 -pipe -bundle -undefined dynamic_lookup -o ext.bundle ext.o match.o matcher.o -L. -L/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib -L. -arch i386 -arch x86_64     -lruby  -lpthread -ldl -lobjc
 
 
 ```
