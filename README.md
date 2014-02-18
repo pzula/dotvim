@@ -1,6 +1,8 @@
 dotvim
 ======
 
+** These are my old configs, originally borrowed from Levi <https://github.com/levicook>, but now my [dotfiles](github.com/pzula/dotfiles) repo is much more up to date regarding configuration. Please note, I'm using Vundle nowadays for Vim plugins. **
+
 ```bash
 
 pzula:~
